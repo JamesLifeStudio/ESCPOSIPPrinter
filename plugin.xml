@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-jameslifestudio-escposprinter" version="0.1.4" 
+<plugin id="cordova-plugin-jameslifestudio-escposprinter" version="0.1.5" 
     xmlns="http://apache.org/cordova/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <name>escposprinter</name>
     <js-module name="escposprinter" src="www/escposprinter.js">
-        <clobbers target="cordova.plugins.escposprinter" />
+        <clobbers target="cordova.plugins.jameslifestudio.escposprinter" />
     </js-module>
     <platform name="android">
         <config-file target="AndroidManifest.xml" parent="/*">
@@ -12,11 +12,11 @@
         </config-file>
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="escposprinter">
-                <param name="android-package" value="cordova.plugin.escposprinter.escposprinter" />
+                <param name="android-package" value="cordova.plugin.jameslifestudio.escposprinter.escposprinter" />
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
-        <source-file src="src/android/escposipprinter.java" target-dir="src/cordova.plugin.escposprinter/escposprinter" />
+        <source-file src="src/android/escposprinter.java" target-dir="src/cordova.plugin.jameslifestudio.escposprinter/escposprinter" />
         <source-file src="src/android/ZSDK_ANDROID_API.jar" target-dir="libs"/>
     </platform>
 </plugin>

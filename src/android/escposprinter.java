@@ -1,4 +1,4 @@
-package cordova.plugin.escposprinter;
+package cordova.plugin.jameslifestudio.escposprinter;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
