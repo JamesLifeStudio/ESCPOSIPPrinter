@@ -1,4 +1,4 @@
-package cordova.plugin.escposipprinter;
+package cordova.plugin.escposprinter;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -35,11 +35,11 @@ import android.util.Log;
  * This class echoes a string called from JavaScript.
  */
 
-public class escposipprinter extends CordovaPlugin {
+public class escposprinter extends CordovaPlugin {
 
-    private static final String LOG_TAG = "escposipprinter";
+    private static final String LOG_TAG = "escposprinter";
 
-    public escposipprinter() {
+    public escposprinter() {
     }
 
     @Override
@@ -60,7 +60,7 @@ public class escposipprinter extends CordovaPlugin {
 
                 if (isShowLogo == true) {
                     byte[] cmdAlignmentCenter = new byte[] { 0x1B, 0x61, 0x1 };
-                    byte[] cmdShowLogo = new byte[] { 0x1C, 0x70, 0x1, 0x48 };
+                    byte[] cmdShowLogo = new byte[] { 0x1C, 0x70, 0x1, 0x0 };
                     outToServer.write(cmdAlignmentCenter);
                     outToServer.write(cmdShowLogo);
                     outToServer.write(dataPrint.getBytes("CP-874"));
